@@ -20,7 +20,7 @@ class companyController extends Controller
         ]);
 
         // Getting company details for submitted symbol
-        $url = 'https://pkgstore.datahub.io/core/nasdaq-listings/nasdaq-listed_json/data/a5bc7580d6176d60ac0b2142ca8d7df6/nasdaq-listed_json.json';
+        $url = 'Insert json URL here';
         $datos = file_get_contents($url);
         $data = json_decode($datos, true);
         $data = array_filter($data);
