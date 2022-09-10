@@ -33,9 +33,9 @@ class companyController extends Controller
         })));
 
         //Calling API to get conpany history
-        $apiUrl = 'https://yh-finance.p.rapidapi.com/stock/v3/get-historical-data?symbol='.$req->input(['companySymbol']);
+        $apiUrl = 'Insert API URL here';
         $data['data'] = Http::withHeaders([
-            "X-RapidAPI-Key" => "9a0b16b58emsh7df0331b871bdedp183fb6jsn99b9429c3358"
+            "X-RapidAPI-Key" => "Insert API key Here"
         ])->get($apiUrl)->json();
 
         // Sending Mail
